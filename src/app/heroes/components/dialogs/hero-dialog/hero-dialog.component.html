@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>¿Está seguro de eliminar a <strong>{{data.superhero}}</strong>?</h1>
+<div mat-dialog-content>
+  <p>Este proceso no se puede deshacer</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="primary" (click)="onNoClick()">No Thanks</button>
+  <span class="spacer"></span>
+  <button mat-button color="warn" (click)="onConfirm()" cdkFocusInitial>
+    Ok
+    <mat-icon>delete</mat-icon>
+  </button>
+</div>

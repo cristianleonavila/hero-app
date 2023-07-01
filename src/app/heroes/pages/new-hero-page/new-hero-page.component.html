@@ -65,7 +65,8 @@
         <div class="flex justify-content-between">
           <button mat-flat-button
                   color="warn"
-                  *ngIf="isEditMode">
+                  *ngIf="isEditMode"
+                  (click)="confirmDeleteHero()">
             <mat-icon>delete</mat-icon>
             Borrar
           </button>
